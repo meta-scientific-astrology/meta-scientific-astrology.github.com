@@ -1,0 +1,208 @@
+/* Общие настройки */
+:root {
+    --primary-color: #1a1a1a;
+    --accent-color: #2563eb;
+    /* Синий цвет для кнопок/ссылок */
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --paper-width: 800px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Навигация */
+nav {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: var(--paper-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.links a {
+    text-decoration: none;
+    color: #666;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.links a:hover {
+    color: var(--accent-color);
+}
+
+/* Герой-секция (Баннер и Кнопка) */
+.hero {
+    background: white;
+    text-align: center;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.banner-container {
+    width: 100%;
+    max-width: 1000px;
+    /* Баннер может быть шире текста */
+    margin: 0 auto 2rem auto;
+    overflow: hidden;
+}
+
+.hero-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cta-container {
+    max-width: var(--paper-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Кнопка "Enter" */
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: black;
+}
+
+.cta-sub {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Контент (Текст теории) */
+.paper-content {
+    max-width: var(--paper-width);
+    margin: 3rem auto;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Типографика статьи */
+article {
+    font-family: "Georgia", "Merriweather", serif;
+    /* Засечки для долгого чтения */
+    font-size: 1.1rem;
+}
+
+article h1,
+article h2,
+article h3 {
+    font-family: -apple-system, sans-serif;
+    /* Заголовки без засечек */
+    color: var(--primary-color);
+    margin-top: 2.5rem;
+}
+
+article p {
+    margin-bottom: 1.5rem;
+}
+
+article blockquote {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 20px;
+    margin: 20px 0;
+    color: #555;
+    background: #f8faff;
+    padding: 15px;
+}
+
+article ul,
+article ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+article li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3rem 0;
+    color: #888;
+    font-size: 0.9rem;
+    border-top: 1px solid #eaeaea;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 600px) {
+    .paper-content {
+        padding: 20px;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .cta-button {
+        width: 80%;
+        padding: 15px 0;
+    }
+}
+
+/* Стили для блока сторов */
+.store-links {
+    margin-top: 25px;
+}
