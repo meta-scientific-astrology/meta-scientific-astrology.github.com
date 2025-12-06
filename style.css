@@ -202,7 +202,80 @@ footer {
     }
 }
 
-/* Стили для блока сторов */
+/* Блок ссылок на сторы */
 .store-links {
-    margin-top: 25px;
+    margin-top: 30px;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    /* Отступ между кнопками */
+    flex-wrap: wrap;
+    /* Чтобы переносились на мобильных */
+    margin-top: 15px;
+}
+
+/* Стиль кнопки стора */
+.store-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    /* Отступ между иконкой и текстом */
+
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #e1e1e1;
+
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.store-btn i {
+    font-size: 1.1rem;
+    /* Размер иконки */
+}
+
+/* Ховер эффект (при наведении) */
+.store-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #333;
+    background-color: #fafafa;
+}
+
+/* Специфичные цвета иконок (по желанию, можно убрать) */
+.store-btn.android i {
+    color: #3DDC84;
+}
+
+.store-btn.windows i {
+    color: #0078D6;
+}
+
+.store-btn.apple i,
+.store-btn.macos i {
+    color: #000;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 600px) {
+    .badges {
+        gap: 10px;
+    }
+
+    .store-btn {
+        flex: 1 1 40%;
+        /* Кнопки растянутся по 2 в ряд */
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
 }
