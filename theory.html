@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="policy-page">
+<body class="policy-page theory-page">
 
     <nav class="navbar">
         <div class="nav-inner">
@@ -24,9 +24,28 @@
         </div>
     </nav>
 
-    <main class="paper-content">
-        <article>
-            <h1>The Fundamental Theory of [MSA]</h1>
+    <main class="paper-layout">
+        <aside class="chapter-nav" aria-label="Chapter navigation">
+            <div class="chapter-nav-inner">
+                <p class="chapter-nav-title">Quick Navigation</p>
+                <a href="#theory-top">Cover</a>
+                <a href="#chapter-1-the-astrological-worldview-">Chapter 1</a>
+                <a href="#chapter-2-astrological-mechanics">Chapter 2</a>
+                <a href="#chapter-3-the-alphabet-of-msa-markers-and-their-meanings">Chapter 3</a>
+                <a href="#chapter-4-astrological-fields-the-unified-principle-of-the-cycle-at-different-scales">Chapter 4</a>
+                <a href="#chapter-5-the-msa-theory-of-aspects-aspectology-">Chapter 5</a>
+                <a href="#chapter-6-analysis-of-the-natal-chart-a-hierarchical-model-of-the-personality">Chapter 6</a>
+                <a href="#7-analysis-of-compatibility-and-interaction-synastry-in-msa-">Chapter 7</a>
+                <a href="#chapter-8-predictive-analysis-and-transits-in-msa-">Chapter 8</a>
+                <a href="#9-conclusion-from-the-map-of-the-cosmos-to-the-architecture-of-consciousness">Chapter 9</a>
+                <a href="#appendix-1-frequently-asked-questions-about-msa-theory">Appendix 1 (FAQ)</a>
+                <a href="#appendix-2-glossary-of-msa-terms">Appendix 2 (Glossary)</a>
+            </div>
+        </aside>
+
+        <section class="paper-content">
+            <article>
+                <h1 id="theory-top">The Fundamental Theory of [MSA]</h1>
             <p><em>By Ruslan Dzhansakov</em></p>
             <hr>
 
@@ -4870,7 +4889,8 @@
 
             <!-- END OF THEORY CONTENT -->
 
-        </article>
+            </article>
+        </section>
     </main>
 
     <footer class="site-footer">
@@ -4893,6 +4913,83 @@
             <p class="footer-copy">&copy; 2024 Ruslan Dzhansakov. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        (() => {
+            const nav = document.querySelector('.chapter-nav');
+            if (!nav) return;
+
+            const links = Array.from(nav.querySelectorAll('a[href^="#"]'));
+            if (!links.length) return;
+
+            const entries = links
+                .map((link) => {
+                    const targetId = decodeURIComponent(link.getAttribute('href').slice(1));
+                    const section = document.getElementById(targetId);
+                    return section ? { link, section } : null;
+                })
+                .filter(Boolean);
+
+            if (!entries.length) return;
+
+            const setActiveLink = (activeLink) => {
+                links.forEach((link) => {
+                    link.classList.toggle('active', link === activeLink);
+                });
+            };
+
+            const currentEntryByScroll = () => {
+                const scrollOffset = 120;
+                let current = entries[0];
+
+                for (const entry of entries) {
+                    if (entry.section.getBoundingClientRect().top - scrollOffset <= 0) {
+                        current = entry;
+                    } else {
+                        break;
+                    }
+                }
+
+                return current;
+            };
+
+            const updateFromHash = () => {
+                if (!window.location.hash) return false;
+                const hash = decodeURIComponent(window.location.hash);
+                const matched = links.find((link) => link.getAttribute('href') === hash);
+                if (!matched) return false;
+                setActiveLink(matched);
+                return true;
+            };
+
+            const updateFromScroll = () => {
+                const current = currentEntryByScroll();
+                if (current) setActiveLink(current.link);
+            };
+
+            let ticking = false;
+            const onScroll = () => {
+                if (ticking) return;
+                ticking = true;
+                window.requestAnimationFrame(() => {
+                    updateFromScroll();
+                    ticking = false;
+                });
+            };
+
+            if (!updateFromHash()) {
+                updateFromScroll();
+            }
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', onScroll);
+            window.addEventListener('hashchange', () => {
+                if (!updateFromHash()) {
+                    updateFromScroll();
+                }
+            });
+        })();
+    </script>
 
 </body>
 
