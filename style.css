@@ -941,12 +941,69 @@ img {
 }
 
 /* ============================================
-   Theory page override (preserve existing)
+   Theory Page Layout
    ============================================ */
 
-.paper-content {
-    max-width: var(--content-width);
-    margin: 3rem auto;
+.theory-page .paper-layout {
+    max-width: min(1380px, calc(100% - 48px));
+    margin: 2.5rem auto 3rem;
+    display: grid;
+    grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.theory-page .chapter-nav {
+    position: sticky;
+    top: 88px;
+}
+
+.theory-page .chapter-nav-inner {
+    background: var(--bg-surface);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 18px 16px;
+}
+
+.theory-page .chapter-nav-title {
+    font-family: var(--font);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.theory-page .chapter-nav a {
+    display: block;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    padding: 8px 10px;
+    border-radius: var(--radius-sm);
+    transition: color 0.2s, background 0.2s;
+}
+
+.theory-page .chapter-nav a + a {
+    margin-top: 2px;
+}
+
+.theory-page .chapter-nav a:hover {
+    color: var(--text-primary);
+    background: var(--glass-hover);
+}
+
+.theory-page .chapter-nav a.active {
+    color: var(--text-primary);
+    background: var(--accent-soft);
+    box-shadow: inset 0 0 0 1px rgba(0, 212, 170, 0.35);
+}
+
+.theory-page .paper-content {
+    max-width: none;
+    margin: 0;
     padding: 40px;
     background: var(--bg-surface);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -954,25 +1011,31 @@ img {
     color: var(--text-primary);
 }
 
-article {
+.theory-page article {
     font-family: 'Georgia', 'Merriweather', serif;
     font-size: 1.1rem;
     color: var(--text-secondary);
 }
 
-article h1,
-article h2,
-article h3 {
+.theory-page article h1,
+.theory-page article h2,
+.theory-page article h3 {
     font-family: var(--font);
     color: var(--text-primary);
     margin-top: 2.5rem;
 }
 
-article p {
+.theory-page article h1[id],
+.theory-page article h2[id],
+.theory-page article h3[id] {
+    scroll-margin-top: 92px;
+}
+
+.theory-page article p {
     margin-bottom: 1.5rem;
 }
 
-article blockquote {
+.theory-page article blockquote {
     border-left: 4px solid var(--accent);
     padding: 15px 20px;
     margin: 20px 0;
@@ -980,12 +1043,219 @@ article blockquote {
     background: var(--glass);
 }
 
-article ul,
-article ol {
+.theory-page article ul,
+.theory-page article ol {
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
 }
 
-article li {
+.theory-page article li {
     margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1100px) {
+    .theory-page .paper-layout {
+        max-width: calc(100% - 32px);
+        grid-template-columns: minmax(200px, 240px) minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .theory-page .paper-content {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 820px) {
+    .theory-page .paper-layout {
+        grid-template-columns: 1fr;
+        margin: 1.5rem auto 2.25rem;
+    }
+
+    .theory-page .chapter-nav {
+        position: static;
+    }
+
+    .theory-page .chapter-nav-inner {
+        max-height: 240px;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .theory-page .paper-layout {
+        max-width: calc(100% - 20px);
+        margin: 1.1rem auto 1.8rem;
+    }
+
+    .theory-page .chapter-nav-inner {
+        padding: 14px;
+    }
+
+    .theory-page .paper-content {
+        padding: 22px 18px;
+    }
+
+    .theory-page article {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   Theory Layout Fallback (no body prefix)
+   ============================================ */
+
+.paper-layout {
+    max-width: min(1380px, calc(100% - 48px));
+    margin: 2.5rem auto 3rem;
+    display: grid;
+    grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.paper-layout .chapter-nav {
+    position: sticky;
+    top: 88px;
+}
+
+.paper-layout .chapter-nav-inner {
+    background: var(--bg-surface);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 18px 16px;
+}
+
+.paper-layout .chapter-nav-title {
+    font-family: var(--font);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.paper-layout .chapter-nav a {
+    display: block;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    padding: 8px 10px;
+    border-radius: var(--radius-sm);
+    transition: color 0.2s, background 0.2s;
+}
+
+.paper-layout .chapter-nav a + a {
+    margin-top: 2px;
+}
+
+.paper-layout .chapter-nav a:hover {
+    color: var(--text-primary);
+    background: var(--glass-hover);
+}
+
+.paper-layout .chapter-nav a.active {
+    color: var(--text-primary);
+    background: var(--accent-soft);
+    box-shadow: inset 0 0 0 1px rgba(0, 212, 170, 0.35);
+}
+
+.paper-layout .paper-content {
+    max-width: none;
+    margin: 0;
+    padding: 40px;
+    background: var(--bg-surface);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+}
+
+.paper-layout article {
+    font-family: 'Georgia', 'Merriweather', serif;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+.paper-layout article h1,
+.paper-layout article h2,
+.paper-layout article h3 {
+    font-family: var(--font);
+    color: var(--text-primary);
+    margin-top: 2.5rem;
+}
+
+.paper-layout article h1[id],
+.paper-layout article h2[id],
+.paper-layout article h3[id] {
+    scroll-margin-top: 92px;
+}
+
+.paper-layout article p {
+    margin-bottom: 1.5rem;
+}
+
+.paper-layout article blockquote {
+    border-left: 4px solid var(--accent);
+    padding: 15px 20px;
+    margin: 20px 0;
+    color: var(--text-secondary);
+    background: var(--glass);
+}
+
+.paper-layout article ul,
+.paper-layout article ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.paper-layout article li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1100px) {
+    .paper-layout {
+        max-width: calc(100% - 32px);
+        grid-template-columns: minmax(200px, 240px) minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .paper-layout .paper-content {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 820px) {
+    .paper-layout {
+        grid-template-columns: 1fr;
+        margin: 1.5rem auto 2.25rem;
+    }
+
+    .paper-layout .chapter-nav {
+        position: static;
+    }
+
+    .paper-layout .chapter-nav-inner {
+        max-height: 240px;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .paper-layout {
+        max-width: calc(100% - 20px);
+        margin: 1.1rem auto 1.8rem;
+    }
+
+    .paper-layout .chapter-nav-inner {
+        padding: 14px;
+    }
+
+    .paper-layout .paper-content {
+        padding: 22px 18px;
+    }
+
+    .paper-layout article {
+        font-size: 1rem;
+    }
 }
