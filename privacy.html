@@ -15,8 +15,8 @@
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">AL<span>FI</span></a>
             <div class="nav-links" id="navLinks">
-                <a href="index.html">Home</a>
-                <a href="support.html">Support</a>
+                <a href="index.html" data-i18n="nav.philosophy">Home</a>
+                <a href="support.html" data-i18n="nav.support">Support</a>
             </div>
             <div class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
                 <span></span><span></span><span></span>
@@ -25,46 +25,46 @@
     </nav>
 
     <main class="policy-content">
-        <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: 2026-01-11</p>
+        <h1 data-i18n="policy.privacy.title">Privacy Policy</h1>
+        <p class="last-updated" data-i18n="policy.privacy.updated">Last updated: 2026-01-11</p>
 
-        <h2>1. Introduction</h2>
-        <p>Thank you for using ALFI. We respect your privacy and are committed to protecting your personal data
+        <h2 data-i18n="policy.privacy.1.title">1. Introduction</h2>
+        <p data-i18n="policy.privacy.1.p">Thank you for using ALFI. We respect your privacy and are committed to protecting your personal data
             regarding your usage of our natural cycle tracking utility.</p>
 
-        <h2>2. Data We Collect</h2>
-        <p>To calculate precise astronomical positions and personal biorhythm models, we may collect the following
+        <h2 data-i18n="policy.privacy.2.title">2. Data We Collect</h2>
+        <p data-i18n="policy.privacy.2.p">To calculate precise astronomical positions and personal biorhythm models, we may collect the following
             information:</p>
         <ul>
-            <li><strong>Calculation Data:</strong> Date of birth, time of birth, and place of birth.</li>
+            <li data-i18n-html="policy.privacy.2.l1"><strong>Calculation Data:</strong> Date of birth, time of birth, and place of birth.</li>
         </ul>
-        <p>This data is strictly required to generate deterministic astronomical coordinates (ephemerides) necessary for
+        <p data-i18n="policy.privacy.2.p2">This data is strictly required to generate deterministic astronomical coordinates (ephemerides) necessary for
             the MSA Framework algorithms.</p>
 
-        <h2>3. How We Use Your Data</h2>
-        <p>Your data is used solely for mathematical calculations, cycle modeling, and generating analytical insights
+        <h2 data-i18n="policy.privacy.3.title">3. How We Use Your Data</h2>
+        <p data-i18n="policy.privacy.3.p">Your data is used solely for mathematical calculations, cycle modeling, and generating analytical insights
             within the app. Specifically:</p>
         <ul>
-            <li>We use this data to calculate planetary positions and visualize interaction dynamics.</li>
-            <li>We <strong>do not</strong> sell, rent, or share your personal data with third parties.</li>
-            <li>All calculations are performed securely according to platform requirements.</li>
+            <li data-i18n="policy.privacy.3.l1">We use this data to calculate planetary positions and visualize interaction dynamics.</li>
+            <li data-i18n-html="policy.privacy.3.l2">We <strong>do not</strong> sell, rent, or share your personal data with third parties.</li>
+            <li data-i18n="policy.privacy.3.l3">All calculations are performed securely according to platform requirements.</li>
         </ul>
 
-        <h2>4. In-App Purchases</h2>
-        <p>Payment information for subscriptions (ALFI Premium) is processed exclusively by the App Stores. We do not
+        <h2 data-i18n="policy.privacy.4.title">4. In-App Purchases</h2>
+        <p data-i18n="policy.privacy.4.p">Payment information for subscriptions (ALFI Premium) is processed exclusively by the App Stores. We do not
             have access to your payment details or credit card information.</p>
 
-        <h2>5. Data Deletion</h2>
-        <p>You have full control over your data. You may delete your account and all associated information at any time
+        <h2 data-i18n="policy.privacy.5.title">5. Data Deletion</h2>
+        <p data-i18n="policy.privacy.5.p">You have full control over your data. You may delete your account and all associated information at any time
             using the option provided in the app (Settings &gt; Delete Account). Upon deletion, your personal profile is
             permanently removed.</p>
 
-        <h2>6. Children's Privacy</h2>
-        <p>ALFI is not intended for children under the age specified in local laws. We do not knowingly collect data
+        <h2 data-i18n="policy.privacy.6.title">6. Children's Privacy</h2>
+        <p data-i18n="policy.privacy.6.p">ALFI is not intended for children under the age specified in local laws. We do not knowingly collect data
             from minors.</p>
 
-        <h2>7. Contact Us</h2>
-        <p>If you have questions about this Privacy Policy, please contact our support team at:
+        <h2 data-i18n="policy.privacy.7.title">7. Contact Us</h2>
+        <p><span data-i18n="policy.privacy.7.p">If you have questions about this Privacy Policy, please contact our support team at:</span>
             <strong>astrodiary.dar@gmail.com</strong>
         </p>
     </main>
@@ -73,12 +73,12 @@
         <div class="footer-inner">
             <div class="footer-logo">ALFI</div>
             <div class="footer-links">
-                <a href="terms.html">Terms of Service</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="refund.html">Refund Policy</a>
-                <a href="support.html">Support</a>
-                <a href="deletion.html">Delete Account</a>
-                <a href="theory.html">Theory (White Paper)</a>
+                <a href="terms.html" data-i18n="footer.links.terms">Terms of Service</a>
+                <a href="privacy.html" data-i18n="footer.links.privacy">Privacy Policy</a>
+                <a href="refund.html" data-i18n="footer.links.refund">Refund Policy</a>
+                <a href="support.html" data-i18n="footer.links.support">Support</a>
+                <a href="deletion.html" data-i18n="footer.links.deletion">Delete Account</a>
+                <a href="theory.html" data-i18n="footer.links.theory">Theory (White Paper)</a>
             </div>
             <div class="footer-social">
                 <a href="https://www.reddit.com/r/MSA_Astrology" title="Reddit"><i class="fab fa-reddit"></i></a>
@@ -86,10 +86,10 @@
                 <a href="https://astromsa.substack.com/" title="Substack"><i class="fas fa-newspaper"></i></a>
                 <a href="mailto:astrodiary.dar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="footer-copy">&copy; 2024 Ruslan Dzhansakov. All rights reserved.</p>
+            <p class="footer-copy" data-i18n="footer.copy">&copy; 2024 Ruslan Dzhansakov. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>

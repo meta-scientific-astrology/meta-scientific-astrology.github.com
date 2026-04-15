@@ -15,8 +15,8 @@
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">AL<span>FI</span></a>
             <div class="nav-links" id="navLinks">
-                <a href="index.html">Home</a>
-                <a href="support.html">Support</a>
+                <a href="index.html" data-i18n="nav.philosophy">Home</a>
+                <a href="support.html" data-i18n="nav.support">Support</a>
             </div>
             <div class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
                 <span></span><span></span><span></span>
@@ -27,7 +27,7 @@
     <main class="paper-layout">
         <aside class="chapter-nav" aria-label="Chapter navigation">
             <div class="chapter-nav-inner">
-                <p class="chapter-nav-title">Quick Navigation</p>
+                <p class="chapter-nav-title" data-i18n="theory.nav.title">Quick Navigation</p>
                 <a href="#theory-top">Cover</a>
                 <a href="#chapter-1-the-astrological-worldview-">Chapter 1</a>
                 <a href="#chapter-2-astrological-mechanics">Chapter 2</a>
@@ -45,12 +45,12 @@
 
         <section class="paper-content">
             <article>
-                <h1 id="theory-top">The Fundamental Theory of [MSA]</h1>
-            <p><em>By Ruslan Dzhansakov</em></p>
+                <h1 id="theory-top" data-i18n="theory.main.title">The Fundamental Theory of [MSA]</h1>
+            <p><em data-i18n="theory.author">By Ruslan Dzhansakov</em></p>
             <hr>
 
 
-            <h1 id="chapter-1-the-astrological-worldview-">Chapter 1. The Astrological Worldview !</h1>
+            <h1 id="chapter-1-the-astrological-worldview-" data-i18n="theory.ch1.title">Chapter 1. The Astrological Worldview !</h1>
             <h2 id="table-of-contents-">Table of Contents:</h2>
             <p>1.1 Positioning [MSA]: The Status of the Theory
                 1.2 The First Principle: From Substance to Process
@@ -447,7 +447,7 @@
                 [Field].
             </h2>
             <h2 id="-end-of-chapter-1-"><strong>End of Chapter 1</strong></h2>
-            <h1 id="chapter-2-astrological-mechanics">Chapter 2. ASTROLOGICAL MECHANICS</h1>
+            <h1 id="chapter-2-astrological-mechanics" data-i18n="theory.ch2.title">Chapter 2. ASTROLOGICAL MECHANICS</h1>
             <h2 id="table-of-contents-">Table of Contents:</h2>
             <p>2.1 The Unified Mechanism of Interaction
                 2.2 The Two Layers of Analysis: The Map of Perception and the Field of Potential</p>
@@ -4897,12 +4897,12 @@
         <div class="footer-inner">
             <div class="footer-logo">ALFI</div>
             <div class="footer-links">
-                <a href="terms.html">Terms of Service</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="refund.html">Refund Policy</a>
-                <a href="support.html">Support</a>
-                <a href="deletion.html">Delete Account</a>
-                <a href="theory.html" class="active">Theory (White Paper)</a>
+                <a href="terms.html" data-i18n="footer.links.terms">Terms of Service</a>
+                <a href="privacy.html" data-i18n="footer.links.privacy">Privacy Policy</a>
+                <a href="refund.html" data-i18n="footer.links.refund">Refund Policy</a>
+                <a href="support.html" data-i18n="footer.links.support">Support</a>
+                <a href="deletion.html" data-i18n="footer.links.deletion">Delete Account</a>
+                <a href="theory.html" class="active" data-i18n="footer.links.theory">Theory (White Paper)</a>
             </div>
             <div class="footer-social">
                 <a href="https://www.reddit.com/r/MSA_Astrology" title="Reddit"><i class="fab fa-reddit"></i></a>
@@ -4910,10 +4910,11 @@
                 <a href="https://astromsa.substack.com/" title="Substack"><i class="fas fa-newspaper"></i></a>
                 <a href="mailto:astrodiary.dar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="footer-copy">&copy; 2024 Ruslan Dzhansakov. All rights reserved.</p>
+            <p class="footer-copy" data-i18n="footer.copy">&copy; 2024 Ruslan Dzhansakov. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="js/i18n.js"></script>
+</body>
     <script>
         (() => {
             const nav = document.querySelector('.chapter-nav');

@@ -192,16 +192,7 @@
             gap: 14px;
         }
 
-        /* Store badges in CTA card */
-        .cta-card .store-badges {
-            justify-content: flex-start;
-            margin-top: 4px;
-        }
 
-        .cta-card .store-badge {
-            font-size: 0.8rem;
-            padding: 8px 14px;
-        }
 
         /* Btn outline for hero */
         .btn-outline {
@@ -255,7 +246,7 @@
         .theory-img {
             border-radius: var(--radius-md);
             box-shadow: 0 20px 70px rgba(0, 0, 0, 0.45),
-                        0 0 0 1px var(--glass-border);
+                0 0 0 1px var(--glass-border);
             transition: transform 0.4s ease;
             width: 100%;
         }
@@ -315,11 +306,11 @@
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">AL<span>FI</span></a>
             <div class="nav-links" id="navLinks">
-                <a href="#philosophy">Philosophy</a>
-                <a href="#pillars">Framework</a>
-                <a href="index_app.html">ALFI App</a>
-                <a href="theory.html">White Paper</a>
-                <a href="support.html">Support</a>
+                <a href="#philosophy" data-i18n="nav.philosophy">Philosophy</a>
+                <a href="#pillars" data-i18n="nav.pillars">Framework</a>
+                <a href="index_app.html" data-i18n="nav.app">ALFI App</a>
+                <a href="theory.html" data-i18n="nav.theory">White Paper</a>
+                <a href="support.html" data-i18n="nav.support">Support</a>
             </div>
             <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
                 <span></span>
@@ -331,17 +322,18 @@
 
     <!-- ========== HERO ========== -->
     <section class="hero" id="hero">
-        <div class="hero-badge">Meta-Scientific Astrology</div>
-        <h1>Метанаучная Астрология:<br><span class="gradient-text">Синхронизация с Реальностью.</span></h1>
-        <p class="hero-subtitle">
-            Время — это не просто цифры на циферблате. Это фундаментальный процесс, создающий нашу реальность. Мы изучаем его паттерны через планетарные циклы, отбросив мифы и оставив чистую логику синхронизма.
+        <div class="hero-badge" data-i18n="hero.badge">Meta-Scientific Astrology</div>
+        <h1 data-i18n-html="hero.title">Метанаучная Астрология:<br><span class="gradient-text">Синхронизация с Реальностью.</span></h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Время — это не просто цифры на циферблате. Это фундаментальный процесс, создающий нашу реальность. Мы
+            изучаем его паттерны через планетарные циклы, отбросив мифы и оставив чистую логику синхронизма.
         </p>
         <div class="hero-actions-row">
             <a href="#philosophy" class="btn-primary">
-                ИЗУЧИТЬ ФРЕЙМВОРК MSA <span class="arrow">↓</span>
+                <span data-i18n="hero.cta.study">ИЗУЧИТЬ ФРЕЙМВОРК MSA</span> <span class="arrow">↓</span>
             </a>
             <a href="index_app.html" class="btn-outline">
-                <i class="fas fa-globe"></i> Открыть ALFI Процессор
+                <i class="fas fa-globe"></i> <span data-i18n="hero.cta.open">Открыть ALFI</span>
             </a>
         </div>
     </section>
@@ -354,16 +346,16 @@
 
             <div class="feature-row reveal">
                 <div class="feature-text">
-                    <div class="pillar-badge"><i class="fas fa-circle-nodes"></i> Суть системы</div>
-                    <h2 class="section-title">Реальность — это процесс</h2>
-                    <p>
-                        Без течения времени мир статичен и мертв. Всё живое в нашей реальности встроено в циклы. Миллионы лет эволюции создали в нас механизмы Синхронии и Резонанса с ритмами Солнечной системы.
+                    <div class="pillar-badge"><i class="fas fa-circle-nodes"></i> <span data-i18n="section.philosophy.badge">Суть системы</span></div>
+                    <h2 class="section-title" data-i18n="section.philosophy.title">Реальность — это процесс</h2>
+                    <p data-i18n="section.philosophy.text">
+                        Без течения времени мир статичен и мертв. Всё живое в нашей реальности встроено в циклы.
+                        Миллионы лет эволюции создали в нас механизмы Синхронии и Резонанса с ритмами Солнечной системы.
                     </p>
                 </div>
                 <div class="feature-image">
-                    <img src="assets/images_theory/1_worldview.jpg"
-                         alt="MSA Worldview — Signal in the Noise"
-                         class="theory-img">
+                    <img src="assets/images_theory/1_worldview.jpg" alt="MSA Worldview — Signal in the Noise"
+                        class="theory-img">
                 </div>
             </div>
 
@@ -371,18 +363,19 @@
             <div class="problem-grid reveal" style="margin-top: 80px;">
                 <div class="problem-card">
                     <div class="problem-card-icon"><i class="fas fa-project-diagram"></i></div>
-                    <h3>Паттерны</h3>
-                    <p>Временные циклы, повторяющиеся миллионы лет, сформировали устойчивые законы развития систем.</p>
+                    <h3 data-i18n="section.philosophy.patterns.title">Паттерны</h3>
+                    <p data-i18n="section.philosophy.patterns.text">Временные циклы, повторяющиеся миллионы лет, сформировали устойчивые законы развития систем.</p>
                 </div>
                 <div class="problem-card">
                     <div class="problem-card-icon"><i class="fas fa-globe"></i></div>
-                    <h3>Планеты-Маркеры</h3>
-                    <p>Планеты не «влияют» на нас. Они — видимые и стабильные стрелки на часах Вселенной, позволяющие отслеживать ритмы Времени.</p>
+                    <h3 data-i18n="section.philosophy.markers.title">Планеты-Маркеры</h3>
+                    <p data-i18n="section.philosophy.markers.text">Планеты не «влияют» на нас. Они — видимые и стабильные стрелки на часах Вселенной, позволяющие
+                        отслеживать ритмы Времени.</p>
                 </div>
                 <div class="problem-card">
                     <div class="problem-card-icon"><i class="fas fa-sync-alt"></i></div>
-                    <h3>Синхронизм</h3>
-                    <p>Способность живых систем действовать в такт с универсальными циклами реальности.</p>
+                    <h3 data-i18n="section.philosophy.sync.title">Синхронизм</h3>
+                    <p data-i18n="section.philosophy.sync.text">Способность живых систем действовать в такт с универсальными циклами реальности.</p>
                 </div>
             </div>
         </div>
@@ -393,28 +386,33 @@
     <!-- ========== NEW PILLARS (MSA FRAMEWORK) ========== -->
     <section class="section" id="pillars">
         <div class="section-inner">
-            
+
             <div class="section-header-centered reveal">
-                <span class="section-label">Локальные зодиаки</span>
-                <h2 class="section-title">Почему традиционные системы ошибочны?</h2>
+                <span class="section-label" data-i18n="section.pillars.label">Локальные зодиаки</span>
+                <h2 class="section-title" data-i18n="section.pillars.title">Почему традиционные системы ошибочны?</h2>
             </div>
-            
+
             <div class="feature-row reveal" style="margin-top: 60px; align-items: center;">
                 <div class="feature-text">
                     <p style="margin-bottom: 20px;">
-                        <strong>Тропический зодиак:</strong> Привязан к сезонам Земли. Он перестает работать, как только вы покидаете орбиту планеты или рождаетесь в космосе.
+                        <strong data-i18n="section.pillars.tropical.title">Тропический зодиак:</strong> <span data-i18n="section.pillars.tropical.text">Привязан к сезонам Земли. Он перестает работать, как только
+                        вы покидаете орбиту планеты или рождаетесь в космосе.</span>
                     </p>
                     <p style="margin-bottom: 20px;">
-                        <strong>Сидерический зодиак:</strong> Основан на видимом сдвиге звезд, который является лишь следствием колебания земной оси (прецессии). Он так же локален и привязан к земному наблюдателю.
+                        <strong data-i18n="section.pillars.sidereal.title">Сидерический зодиак:</strong> <span data-i18n="section.pillars.sidereal.text">Основан на видимом сдвиге звезд, который является лишь
+                        следствием колебания земной оси (прецессии). Он так же локален и привязан к земному наблюдателю.</span>
                     </p>
                     <p>
-                        <strong>Решение MSA — Солнечный Зодиак:</strong> Зодиак — это путь Солнца, а не земного наблюдателя. Наша звезда движется вокруг Центра Галактики, который служит единственным стабильным «якорем» и полюсом для всей Солнечной системы. В MSA точка 0° Козерога — это вектор на этот центр. Нам исторически «повезло», что этот вектор почти совпадает с тропическим Козерогом, но MSA заменяет это везение математической точностью.
+                        <strong data-i18n="section.pillars.msa_solution.title">Решение MSA — Солнечный Зодиак:</strong> <span data-i18n="section.pillars.msa_solution.text">Зодиак — это путь Солнца, а не земного
+                        наблюдателя. Наша звезда движется вокруг Центра Галактики, который служит единственным
+                        стабильным «якорем» и полюсом для всей Солнечной системы. В MSA точка 0° Козерога — это вектор
+                        на этот центр. Нам исторически «повезло», что этот вектор почти совпадает с тропическим
+                        Козерогом, но MSA заменяет это везение математической точностью.</span>
                     </p>
                 </div>
                 <div class="feature-image">
-                    <img src="assets/images_theory/4_astro_fields.jpg"
-                         alt="Galactic Zodiac — Astrological Fields"
-                         class="theory-img">
+                    <img src="assets/images_theory/4_astro_fields.jpg" alt="Galactic Zodiac — Astrological Fields"
+                        class="theory-img">
                 </div>
             </div>
 
@@ -422,19 +420,22 @@
 
             <div class="feature-row reverse reveal" style="align-items: center;">
                 <div class="feature-text">
-                    <div class="pillar-badge"><i class="fas fa-book-open"></i> Эмпирические данные</div>
-                    <h3>Возвращение к истокам без сказок</h3>
-                    <p>
-                        Древние наблюдатели накопили колоссальный объем верных эмпирических данных о планетарных циклах. Но, не имея современных знаний о физике и времени, они облекли эти закономерности в форму мифов и легенд.
+                    <div class="pillar-badge"><i class="fas fa-book-open"></i> <span data-i18n="section.empirical.badge">Эмпирические данные</span></div>
+                    <h3 data-i18n="section.empirical.title">Возвращение к истокам без сказок</h3>
+                    <p data-i18n="section.empirical.text1">
+                        Древние наблюдатели накопили колоссальный объем верных эмпирических данных о планетарных циклах.
+                        Но, не имея современных знаний о физике и времени, они облекли эти закономерности в форму мифов
+                        и легенд.
                     </p>
                     <p>
-                        <strong>Миссия MSA:</strong> Мы берем эти реальные данные и переводим их на язык современных знаний о времени, циклах и резонансе. Никаких богов — только закономерности реальности, которые мы наконец-то можем объяснить логически.
+                        <strong data-i18n="section.empirical.mission.title">Миссия MSA:</strong> <span data-i18n="section.empirical.mission.text">Мы берем эти реальные данные и переводим их на язык современных
+                        знаний о времени, циклах и резонансе. Никаких богов — только закономерности реальности, которые
+                        мы наконец-то можем объяснить логически.</span>
                     </p>
                 </div>
                 <div class="feature-image">
                     <img src="assets/images_theory/2_astro_mechanics.jpg"
-                         alt="Astrological Mechanics — Field and Resonance"
-                         class="theory-img">
+                        alt="Astrological Mechanics — Field and Resonance" class="theory-img">
                 </div>
             </div>
 
@@ -446,16 +447,19 @@
     <!-- ========== ALFI — THE INSTRUMENT ========== -->
     <section class="section dark-bg" id="alfi">
         <div class="section-inner">
-            
+
             <div class="instrument-header reveal">
-                <span class="section-label">Инструмент навигации</span>
-                <h2 class="section-title">Астропроцессор ALFI</h2>
-                <p class="section-subtitle" style="margin: 0 auto;">
-                    Теория MSA реализована в приложении ALFI — первом в мире инструменте, созданном для работы с синхронией и резонансом. Это ваш персональный навигатор в потоке временных циклов, адаптированный под современный социальный контекст.
+                <span class="section-label" data-i18n="section.alfi.label">Инструмент навигации</span>
+                <h2 class="section-title" data-i18n="section.alfi.title">Астропроцессор ALFI</h2>
+                <p class="section-subtitle" style="margin: 0 auto;" data-i18n="section.alfi.text">
+                    Теория MSA реализована в приложении ALFI — первом в мире инструменте, созданном для работы с
+                    синхронией и резонансом. Это ваш персональный навигатор в потоке временных циклов, адаптированный
+                    под современный социальный контекст.
                 </p>
                 <div style="margin-top: 40px;">
-                    <a href="index_app.html" class="btn-primary" style="display: inline-flex; align-items: center; justify-content: center; padding: 16px 36px; border-radius: 30px; font-weight: 700;">
-                        Перейти к использованию ALFI <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+                    <a href="index_app.html" class="btn-primary"
+                        style="display: inline-flex; align-items: center; justify-content: center; padding: 16px 36px; border-radius: 30px; font-weight: 700;">
+                        <span data-i18n="section.alfi.btn">Перейти к использованию ALFI</span> <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
                     </a>
                 </div>
             </div>
@@ -471,9 +475,9 @@
     <section class="section download-section" id="start">
         <div class="section-inner">
             <div class="reveal section-header-centered">
-                <span class="section-label">Get Started</span>
-                <h2 class="section-title">Choose Your Path</h2>
-                <p class="section-subtitle">
+                <span class="section-label" data-i18n="start.path.label">Get Started</span>
+                <h2 class="section-title" data-i18n="start.path.title">Choose Your Path</h2>
+                <p class="section-subtitle" data-i18n="start.path.subtitle">
                     Dive deep into the theory, or open the processor and navigate right now.
                     Both paths lead to the same destination.
                 </p>
@@ -483,43 +487,29 @@
                 <!-- Path A: Theory -->
                 <div class="cta-card primary">
                     <div class="cta-card-icon">📖</div>
-                    <h3>Study the Theory</h3>
-                    <p>
+                    <h3 data-i18n="start.path.theory.title">Study the Theory</h3>
+                    <p data-i18n="start.path.theory.text">
                         Read the full White Paper — 9 chapters covering the complete
                         philosophical and technical foundation of MSA. Proto-Reality,
                         Resonance, Galactic Zodiac, Synastry, and more.
                     </p>
                     <a href="theory.html" class="btn-cta">
-                        READ WHITE PAPER <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="start.path.theory.btn">READ WHITE PAPER</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
                 <!-- Path B: App -->
                 <div class="cta-card">
                     <div class="cta-card-icon">🚀</div>
-                    <h3>Open the Processor</h3>
-                    <p>
+                    <h3 data-i18n="start.path.app.title">Open the Processor</h3>
+                    <p data-i18n="start.path.app.text">
                         Launch ALFI — your personal MSA navigation instrument.
                         Compute your Archetype, map a relationship, or check
                         today's Radar window. Available on all platforms.
                     </p>
-                    <a href="https://alfi-labs.github.io" class="btn-cta">
-                        OPEN WEB APP <i class="fas fa-arrow-right"></i>
+                    <a href="index_app.html" class="btn-cta">
+                        <span data-i18n="start.path.app.btn">OPEN WEB APP</span> <i class="fas fa-arrow-right"></i>
                     </a>
-                    <div class="store-badges">
-                        <a href="https://apps.apple.com/kg/app/alfi/id6752803085" class="store-badge">
-                            <i class="fab fa-apple"></i> iOS
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=kg.alfi.astroprocessor" class="store-badge">
-                            <i class="fab fa-google-play"></i> Android
-                        </a>
-                        <a href="https://apps.microsoft.com/detail/9n1kkknhlg5t?cid=DevShareMCLPCS&hl=en-US&gl=KG" class="store-badge">
-                            <i class="fab fa-windows"></i> Windows
-                        </a>
-                        <a href="https://apps.apple.com/us/app/alfi/id6752803085" class="store-badge">
-                            <i class="fab fa-apple"></i> macOS
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -530,12 +520,12 @@
         <div class="footer-inner">
             <div class="footer-logo">ALFI</div>
             <div class="footer-links">
-                <a href="theory.html">Theory (White Paper)</a>
-                <a href="terms.html">Terms of Service</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="refund.html">Refund Policy</a>
-                <a href="support.html">Support</a>
-                <a href="deletion.html">Delete Account</a>
+                <a href="theory.html" data-i18n="footer.links.theory">Theory (White Paper)</a>
+                <a href="terms.html" data-i18n="footer.links.terms">Terms of Service</a>
+                <a href="privacy.html" data-i18n="footer.links.privacy">Privacy Policy</a>
+                <a href="refund.html" data-i18n="footer.links.refund">Refund Policy</a>
+                <a href="support.html" data-i18n="footer.links.support">Support</a>
+                <a href="deletion.html" data-i18n="footer.links.deletion">Delete Account</a>
             </div>
             <div class="footer-social">
                 <a href="https://www.reddit.com/r/MSA_Astrology" title="Reddit"><i class="fab fa-reddit"></i></a>
@@ -543,11 +533,11 @@
                 <a href="https://astromsa.substack.com/" title="Substack"><i class="fas fa-newspaper"></i></a>
                 <a href="mailto:astrodiary.dar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="footer-copy">&copy; 2024 Ruslan Dzhansakov. All rights reserved.</p>
+            <p class="footer-copy" data-i18n="footer.copy">&copy; 2024 Ruslan Dzhansakov. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- ========== SCRIPTS ========== -->
+    <script src="js/i18n.js"></script>
     <script>
         // Mobile nav toggle
         function toggleNav() {

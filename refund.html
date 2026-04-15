@@ -15,8 +15,8 @@
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">AL<span>FI</span></a>
             <div class="nav-links" id="navLinks">
-                <a href="index.html">Home</a>
-                <a href="support.html">Support</a>
+                <a href="index.html" data-i18n="nav.philosophy">Home</a>
+                <a href="support.html" data-i18n="nav.support">Support</a>
             </div>
             <div class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
                 <span></span><span></span><span></span>
@@ -25,27 +25,27 @@
     </nav>
 
     <main class="policy-content">
-        <h1>Refund Policy</h1>
-        <p class="last-updated">Last updated: 2026-01-11</p>
+        <h1 data-i18n="policy.refund.title">Refund Policy</h1>
+        <p class="last-updated" data-i18n="policy.refund.updated">Last updated: 2026-01-11</p>
 
-        <h2>1. Digital Products</h2>
-        <p>Since ALFI provides non-tangible, irrevocable digital goods (software and content), we generally do not issue
+        <h2 data-i18n="policy.refund.1.title">1. Digital Products</h2>
+        <p data-i18n="policy.refund.1.p">Since ALFI provides non-tangible, irrevocable digital goods (software and content), we generally do not issue
             refunds once the order is accomplished and the product is sent/accessed.</p>
 
-        <h2>2. Subscriptions</h2>
-        <p>You may cancel your subscription at any time. If you cancel, your subscription will remain active until the
+        <h2 data-i18n="policy.refund.2.title">2. Subscriptions</h2>
+        <p data-i18n="policy.refund.2.p">You may cancel your subscription at any time. If you cancel, your subscription will remain active until the
             end of the current billing period. We do not offer refunds for partially used billing periods.</p>
 
-        <h2>3. Exceptional Circumstances</h2>
-        <p>We honor requests for the refund on the following reasons:</p>
+        <h2 data-i18n="policy.refund.3.title">3. Exceptional Circumstances</h2>
+        <p data-i18n="policy.refund.3.p">We honor requests for the refund on the following reasons:</p>
         <ul>
-            <li><strong>Non-delivery of the product:</strong> due to some mailing issues or technical failure.</li>
-            <li><strong>Major defects:</strong> although all the products are thoroughly tested before release,
+            <li data-i18n-html="policy.refund.3.l1"><strong>Non-delivery of the product:</strong> due to some mailing issues or technical failure.</li>
+            <li data-i18n-html="policy.refund.3.l2"><strong>Major defects:</strong> although all the products are thoroughly tested before release,
                 unexpected errors may occur.</li>
         </ul>
 
-        <h2>4. Contact Us</h2>
-        <p>If you believe you qualify for a refund, please contact us at: <a
+        <h2 data-i18n="policy.refund.4.title">4. Contact Us</h2>
+        <p><span data-i18n="policy.refund.4.p">If you believe you qualify for a refund, please contact us at:</span> <a
                 href="mailto:astrodiary.dar@gmail.com">astrodiary.dar@gmail.com</a></p>
     </main>
 
@@ -53,12 +53,12 @@
         <div class="footer-inner">
             <div class="footer-logo">ALFI</div>
             <div class="footer-links">
-                <a href="terms.html">Terms of Service</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="refund.html">Refund Policy</a>
-                <a href="support.html">Support</a>
-                <a href="deletion.html">Delete Account</a>
-                <a href="theory.html">Theory (White Paper)</a>
+                <a href="terms.html" data-i18n="footer.links.terms">Terms of Service</a>
+                <a href="privacy.html" data-i18n="footer.links.privacy">Privacy Policy</a>
+                <a href="refund.html" data-i18n="footer.links.refund">Refund Policy</a>
+                <a href="support.html" data-i18n="footer.links.support">Support</a>
+                <a href="deletion.html" data-i18n="footer.links.deletion">Delete Account</a>
+                <a href="theory.html" data-i18n="footer.links.theory">Theory (White Paper)</a>
             </div>
             <div class="footer-social">
                 <a href="https://www.reddit.com/r/MSA_Astrology" title="Reddit"><i class="fab fa-reddit"></i></a>
@@ -66,10 +66,10 @@
                 <a href="https://astromsa.substack.com/" title="Substack"><i class="fas fa-newspaper"></i></a>
                 <a href="mailto:astrodiary.dar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="footer-copy">&copy; 2024 Ruslan Dzhansakov. All rights reserved.</p>
+            <p class="footer-copy" data-i18n="footer.copy">&copy; 2024 Ruslan Dzhansakov. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>

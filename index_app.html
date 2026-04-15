@@ -23,11 +23,11 @@
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">AL<span>FI</span></a>
             <div class="nav-links" id="navLinks">
-                <a href="#compatibility">Compatibility</a>
-                <a href="#archetype">Archetype</a>
-                <a href="#radar">Radar</a>
-                <a href="#pricing">Pricing</a>
-                <a href="support.html">Support</a>
+                <a href="#compatibility" data-i18n="app.nav.compatibility">Compatibility</a>
+                <a href="#archetype" data-i18n="app.nav.archetype">Archetype</a>
+                <a href="#radar" data-i18n="app.nav.radar">Radar</a>
+                <a href="#pricing" data-i18n="app.nav.pricing">Pricing</a>
+                <a href="support.html" data-i18n="nav.support">Support</a>
             </div>
             <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
                 <span></span>
@@ -39,10 +39,10 @@
 
     <!-- ========== HERO ========== -->
     <section class="hero" id="hero">
-        <div class="hero-badge">Meta Scientific Astrology</div>
-        <!-- <div class="hero-badge">Biorhythm & Cycle Tracker</div> -->
-        <h1>Navigate Reality<br>with <span class="gradient-text">ALFI</span></h1>
-        <p class="hero-subtitle">
+        <div class="hero-badge" data-i18n="app.hero.badge">Meta Scientific Astrology</div>
+        <!-- <div class="hero-badge" data-i18n="app.hero.badge.tracker">Biorhythm & Cycle Tracker</div> -->
+        <h1 data-i18n-html="app.hero.title">Navigate Reality<br>with <span class="gradient-text">ALFI</span></h1>
+        <p class="hero-subtitle" data-i18n="app.hero.subtitle">
             Discover your archetype, decode relationship dynamics,
             and track natural cycles with precision algorithms.
         </p>
@@ -59,13 +59,13 @@
             <!-- Second row: Secondary platforms -->
             <div class="store-badges" style="margin-top: 4px;">
                 <a href="https://apps.apple.com/kg/app/alfi/id6752803085" class="store-badge">
-                    <i class="fab fa-apple"></i> iOS
+                    <i class="fab fa-apple"></i> iOS <span class="badge-tiny" data-i18n="label.test">test</span>
                 </a>
                 <a href="https://apps.microsoft.com/detail/9n1kkknhlg5t?cid=DevShareMCLPCS&hl=en-US&gl=KG" class="store-badge">
                     <i class="fab fa-windows"></i> Windows
                 </a>
                 <a href="https://alfi-labs.github.io" class="store-badge">
-                    <i class="fas fa-globe"></i> Web
+                    <i class="fas fa-globe"></i> Web <span class="badge-tiny" data-i18n="label.slow">slow</span>
                 </a>
             </div>
         </div>
@@ -80,9 +80,9 @@
     <section class="section" id="compatibility">
         <div class="section-inner">
             <div class="reveal">
-                <span class="section-label">Compatibility</span>
-                <h2 class="section-title">Decode Any Relationship</h2>
-                <p class="section-subtitle">
+                <span class="section-label" data-i18n="app.section.compatibility.label">Compatibility</span>
+                <h2 class="section-title" data-i18n="app.section.compatibility.title">Decode Any Relationship</h2>
+                <p class="section-subtitle" data-i18n="app.section.compatibility.subtitle">
                     Go beyond surface-level assessments. ALFI analyzes the deep architecture of any bond —
                     from synchronicity and resonance to hidden vulnerabilities.
                 </p>
@@ -91,18 +91,18 @@
             <!-- Row 1: Bond overview -->
             <div class="feature-row reveal" style="margin-top: 60px;">
                 <div class="feature-text">
-                    <h3>Bond Scenario</h3>
-                    <p>
+                    <h3 data-i18n="app.section.compatibility.scenario.title">Bond Scenario</h3>
+                    <p data-i18n-html="app.section.compatibility.scenario.text">
                         Get a complete picture of how two people interact. ALFI calculates
                         <strong>Synchronicity</strong> and <strong>Resonance</strong> scores, assigns a
                         relationship archetype, and generates a narrative scenario that captures
                         the dynamic of your connection.
                     </p>
                     <div class="feature-tags">
-                        <span class="feature-tag accent">Synchronicity Score</span>
-                        <span class="feature-tag accent">Resonance Score</span>
-                        <span class="feature-tag">Relationship Archetype</span>
-                        <span class="feature-tag">Narrative Scenario</span>
+                        <span class="feature-tag accent" data-i18n="app.section.compatibility.tags.sync">Synchronicity Score</span>
+                        <span class="feature-tag accent" data-i18n="app.section.compatibility.tags.res">Resonance Score</span>
+                        <span class="feature-tag" data-i18n="app.section.compatibility.tags.arch">Relationship Archetype</span>
+                        <span class="feature-tag" data-i18n="app.section.compatibility.tags.narr">Narrative Scenario</span>
                     </div>
                 </div>
                 <div class="feature-image">
@@ -113,18 +113,18 @@
             <!-- Row 2: Core + Flags -->
             <div class="feature-row reverse reveal">
                 <div class="feature-text">
-                    <h3>Deep Analysis</h3>
-                    <p>
+                    <h3 data-i18n="app.section.compatibility.deep.title">Deep Analysis</h3>
+                    <p data-i18n-html="app.section.compatibility.deep.text">
                         Dive into the <strong>Relationship Architecture</strong> — Soul Resonance, Couple
                         Attraction, Emotional Safety, Chemistry, and more. Identify
                         <strong>Vulnerabilities</strong> like Love Asymmetry, Tension, Friction points
                         before they become real problems.
                     </p>
                     <div class="feature-tags">
-                        <span class="feature-tag accent">Soul Resonance</span>
-                        <span class="feature-tag accent">Attraction</span>
-                        <span class="feature-tag">Red Flags</span>
-                        <span class="feature-tag">Tension Analysis</span>
+                        <span class="feature-tag accent" data-i18n="app.section.compatibility.tags.soul">Soul Resonance</span>
+                        <span class="feature-tag accent" data-i18n="app.section.compatibility.tags.attr">Attraction</span>
+                        <span class="feature-tag" data-i18n="app.section.compatibility.tags.red">Red Flags</span>
+                        <span class="feature-tag" data-i18n="app.section.compatibility.tags.tens">Tension Analysis</span>
                     </div>
                 </div>
                 <div class="feature-image">
@@ -143,9 +143,9 @@
     <section class="section" id="archetype">
         <div class="section-inner">
             <div class="reveal">
-                <span class="section-label">Archetype</span>
-                <h2 class="section-title">Know Your Blueprint</h2>
-                <p class="section-subtitle">
+                <span class="section-label" data-i18n="app.section.archetype.label">Archetype</span>
+                <h2 class="section-title" data-i18n="app.section.archetype.title">Know Your Blueprint</h2>
+                <p class="section-subtitle" data-i18n="app.section.archetype.subtitle">
                     Every person has a unique energy signature. ALFI decodes it into an
                     actionable archetype with a personal success strategy.
                 </p>
@@ -156,19 +156,19 @@
                     <img src="assets/images/page_archetype.jpg" alt="Archetype: Inventive Genius with traits">
                 </div>
                 <div class="feature-text">
-                    <h3>Personal Archetype</h3>
-                    <p>
+                    <h3 data-i18n="app.section.archetype.personal.title">Personal Archetype</h3>
+                    <p data-i18n-html="app.section.archetype.personal.text">
                         Discover your archetype name, success strategy, and core traits.
                         ALFI evaluates <strong>Personal Influence</strong>, <strong>Adaptability</strong>,
                         and <strong>Power of Mastery</strong> — giving you a clear blueprint for
                         making the most of your unique strengths.
                     </p>
                     <div class="feature-tags">
-                        <span class="feature-tag accent">Archetype Name</span>
-                        <span class="feature-tag accent">Success Strategy</span>
-                        <span class="feature-tag">Personal Influence</span>
-                        <span class="feature-tag">Power of Mastery</span>
-                        <span class="feature-tag">Adaptability</span>
+                        <span class="feature-tag accent" data-i18n="app.section.archetype.tags.name">Archetype Name</span>
+                        <span class="feature-tag accent" data-i18n="app.section.archetype.tags.strategy">Success Strategy</span>
+                        <span class="feature-tag" data-i18n="app.section.archetype.tags.influence">Personal Influence</span>
+                        <span class="feature-tag" data-i18n="app.section.archetype.tags.mastery">Power of Mastery</span>
+                        <span class="feature-tag" data-i18n="app.section.archetype.tags.adapt">Adaptability</span>
                     </div>
                 </div>
             </div>
@@ -181,28 +181,28 @@
     <section class="section" id="radar">
         <div class="section-inner">
             <div class="reveal">
-                <span class="section-label">Radar</span>
-                <h2 class="section-title">Daily Navigation</h2>
-                <p class="section-subtitle">
+                <span class="section-label" data-i18n="app.section.radar.label">Radar</span>
+                <h2 class="section-title" data-i18n="app.section.radar.title">Daily Navigation</h2>
+                <p class="section-subtitle" data-i18n="app.section.radar.subtitle">
                     Track the rhythm of each day. Know when to act and when to hold back.
                 </p>
             </div>
 
             <div class="feature-row reverse reveal" style="margin-top: 60px;">
                 <div class="feature-text">
-                    <h3>Flow & Tension Map</h3>
-                    <p>
+                    <h3 data-i18n="app.section.radar.flow.title">Flow & Tension Map</h3>
+                    <p data-i18n-html="app.section.radar.flow.text">
                         ALFI's Radar tracks the real-time energy landscape — detecting windows of
                         <strong>Flow</strong>, <strong>Friction</strong>, and <strong>Tension</strong>.
                         See your active window, danger level, and hourly timeline
                         so you can time your actions with precision.
                     </p>
                     <div class="feature-tags">
-                        <span class="feature-tag accent">Flow States</span>
-                        <span class="feature-tag accent">Tension Windows</span>
-                        <span class="feature-tag">Active Window</span>
-                        <span class="feature-tag">Danger Level</span>
-                        <span class="feature-tag">Hourly Timeline</span>
+                        <span class="feature-tag accent" data-i18n="app.section.radar.tags.flow">Flow States</span>
+                        <span class="feature-tag accent" data-i18n="app.section.radar.tags.tens">Tension Windows</span>
+                        <span class="feature-tag" data-i18n="app.section.radar.tags.active">Active Window</span>
+                        <span class="feature-tag" data-i18n="app.section.radar.tags.danger">Danger Level</span>
+                        <span class="feature-tag" data-i18n="app.section.radar.tags.hourly">Hourly Timeline</span>
                     </div>
                 </div>
                 <div class="feature-image">
@@ -218,36 +218,36 @@
     <section class="section pricing-section" id="pricing">
         <div class="section-inner">
             <div class="reveal">
-                <span class="section-label">Pricing</span>
-                <h2 class="section-title">Simple, Transparent Pricing</h2>
-                <p class="section-subtitle centered">
+                <span class="section-label" data-i18n="app.section.pricing.label">Pricing</span>
+                <h2 class="section-title" data-i18n="app.section.pricing.title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle centered" data-i18n="app.section.pricing.subtitle">
                     Start free. Upgrade when you're ready for the full picture.
                 </p>
             </div>
 
             <div class="pricing-grid reveal">
                 <div class="price-card">
-                    <h3>Basic</h3>
-                    <div class="price-amount">Free</div>
-                    <p class="price-desc">Get started</p>
+                    <h3 data-i18n="app.section.pricing.basic.title">Basic</h3>
+                    <div class="price-amount" data-i18n="app.section.pricing.basic.amount">Free</div>
+                    <p class="price-desc" data-i18n="app.section.pricing.basic.desc">Get started</p>
                     <ul class="price-features">
-                        <li><i class="fas fa-check"></i> Personal Archetype</li>
-                        <li><i class="fas fa-check"></i> Radar — today only</li>
-                        <li><i class="fas fa-check"></i> 2 Bond Analyses</li>
-                        <li><i class="fas fa-check"></i> Deep Analysis & Red Flags</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="app.section.pricing.basic.feature1">Personal Archetype</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="app.section.pricing.basic.feature2">Radar — today only</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="app.section.pricing.basic.feature3">2 Bond Analyses</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="app.section.pricing.basic.feature4">Deep Analysis & Red Flags</span></li>
+                        <li class="disabled"><i class="fas fa-times"></i> <span data-i18n="app.section.pricing.basic.feature5">Priority Support</span></li>
                     </ul>
                 </div>
                 <div class="price-card featured">
-                    <h3>Premium</h3>
-                    <div class="price-amount">$4.90 <span class="price-period">/ month</span></div>
-                    <p class="price-desc">Full Access</p>
+                    <h3 data-i18n="app.section.pricing.premium.title">Premium</h3>
+                    <div class="price-amount"><span data-i18n="app.section.pricing.premium.amount">$4.90</span> <span class="price-period" data-i18n="app.section.pricing.premium.period">/ month</span></div>
+                    <p class="price-desc" data-i18n="app.section.pricing.premium.desc">Full Access</p>
                     <ul class="price-features">
-                        <li><i class="fas fa-check"></i> Personal Archetype</li>
-                        <li><i class="fas fa-check"></i> Radar — any date & time</li>
-                        <li><i class="fas fa-check"></i> Unlimited Bonds</li>
-                        <li><i class="fas fa-check"></i> Deep Analysis & Red Flags</li>
-                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="app.section.pricing.premium.feature1">Personal Archetype</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="app.section.pricing.premium.feature2">Radar — any date & time</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="app.section.pricing.premium.feature3">Unlimited Bonds</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="app.section.pricing.premium.feature4">Deep Analysis & Red Flags</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="app.section.pricing.premium.feature5">Priority Support</span></li>
                     </ul>
                 </div>
             </div>
@@ -260,9 +260,9 @@
     <section class="section download-section" id="download">
         <div class="section-inner">
             <div class="reveal">
-                <span class="section-label">Get Started</span>
-                <h2 class="section-title">Available Everywhere</h2>
-                <p class="section-subtitle centered">
+                <span class="section-label" data-i18n="app.section.download.label">Get Started</span>
+                <h2 class="section-title" data-i18n="app.section.download.title">Available Everywhere</h2>
+                <p class="section-subtitle centered" data-i18n="app.section.download.subtitle">
                     One account. All platforms. Your data syncs seamlessly.
                 </p>
             </div>
@@ -280,13 +280,13 @@
                 
                 <!-- Secondary downloads -->
                 <a href="https://apps.apple.com/kg/app/alfi/id6752803085" class="download-btn">
-                    <i class="fab fa-apple"></i> iOS
+                    <i class="fab fa-apple"></i> iOS <span class="badge-tiny" data-i18n="label.test">test</span>
                 </a>
                 <a href="https://apps.microsoft.com/detail/9n1kkknhlg5t?cid=DevShareMCLPCS&hl=en-US&gl=KG" class="download-btn">
                     <i class="fab fa-windows"></i> Windows
                 </a>
                 <a href="https://alfi-labs.github.io" class="download-btn">
-                    <i class="fas fa-globe"></i> Web
+                    <i class="fas fa-globe"></i> Web <span class="badge-tiny" data-i18n="label.slow">slow</span>
                 </a>
             </div>
         </div>
@@ -297,12 +297,12 @@
         <div class="footer-inner">
             <div class="footer-logo">ALFI</div>
             <div class="footer-links">
-                <a href="terms.html">Terms of Service</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="refund.html">Refund Policy</a>
-                <a href="support.html">Support</a>
-                <a href="deletion.html">Delete Account</a>
-                <a href="theory.html">Theory (White Paper)</a>
+                <a href="terms.html" data-i18n="footer.links.terms">Terms of Service</a>
+                <a href="privacy.html" data-i18n="footer.links.privacy">Privacy Policy</a>
+                <a href="refund.html" data-i18n="footer.links.refund">Refund Policy</a>
+                <a href="support.html" data-i18n="footer.links.support">Support</a>
+                <a href="deletion.html" data-i18n="footer.links.deletion">Delete Account</a>
+                <a href="theory.html" data-i18n="footer.links.theory">Theory (White Paper)</a>
             </div>
             <div class="footer-social">
                 <a href="https://www.reddit.com/r/MSA_Astrology" title="Reddit"><i class="fab fa-reddit"></i></a>
@@ -310,11 +310,11 @@
                 <a href="https://astromsa.substack.com/" title="Substack"><i class="fas fa-newspaper"></i></a>
                 <a href="mailto:astrodiary.dar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="footer-copy">&copy; 2024 Ruslan Dzhansakov. All rights reserved.</p>
+            <p class="footer-copy" data-i18n="footer.copy">&copy; 2024 Ruslan Dzhansakov. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- ========== SCRIPTS ========== -->
+    <script src="js/i18n.js"></script>
     <script>
         // Mobile nav toggle
         function toggleNav() {
