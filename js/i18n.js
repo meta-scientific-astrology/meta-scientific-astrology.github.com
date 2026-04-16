@@ -150,6 +150,7 @@
 
       'label.test': 'test',
       'label.slow': 'slow',
+      'label.demo': 'demo',
 
       /* --- Privacy Policy --- */
       'policy.privacy.title': 'Privacy Policy',
@@ -398,6 +399,7 @@
 
       'label.test': 'тест',
       'label.slow': 'slow',
+      'label.demo': 'демо',
 
       /* --- Политике конфиденциальности --- */
       'policy.privacy.title': 'Политика конфиденциальности',
