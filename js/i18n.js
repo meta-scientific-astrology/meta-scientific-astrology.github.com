@@ -29,8 +29,14 @@
       'section.philosophy.sync.title': 'Synchronism',
       'section.philosophy.sync.text': 'The ability of living systems to act in step with the universal cycles of reality.',
 
-      'section.pillars.label': 'Local Zodiacs',
-      'section.pillars.title': 'Why are Traditional Systems Flawed?',
+      'section.pillars.label': 'Timing Layer',
+      'section.pillars.title': 'Astrology is not about who you are — it’s about when things happen',
+      'section.pillars.text1': 'A birth chart does not know your nationality, your appearance, your past, or the specific circumstances of your life.',
+      'section.pillars.text2': 'It cannot describe your identity in concrete terms.',
+      'section.pillars.text3': 'What it does describe is Timing.',
+      'section.pillars.text4': 'Planetary cycles act as a system of clocks — marking when processes activate, when tension builds, and when events unfold.',
+      'section.pillars.text5': 'MSA focuses on this layer of reality: not personal description, but temporal structure.',
+
       'section.pillars.tropical.title': 'Tropical Zodiac:',
       'section.pillars.tropical.text': 'Tied to the Earth\'s seasons. It stops working as soon as you leave the planet\'s orbit or are born in space.',
       'section.pillars.sidereal.title': 'Sidereal Zodiac:',
@@ -138,9 +144,9 @@
       'start.path.theory.title': 'Study the Theory',
       'start.path.theory.text': 'Read the full White Paper - 9 chapters covering the complete philosophical and technical foundation of MSA. Proto-Reality, Resonance, Galactic Zodiac, Synastry, and more.',
       'start.path.theory.btn': 'READ WHITE PAPER',
-      'start.path.app.title': 'Open the Processor',
+      'start.path.app.title': 'Astro-Processor',
       'start.path.app.text': 'Launch ALFI - your personal MSA navigation instrument. Compute your Archetype, map a relationship, or check today\'s Radar window. Available on all platforms.',
-      'start.path.app.btn': 'OPEN WEB APP',
+      'start.path.app.btn': 'OPEN',
 
       'label.test': 'test',
       'label.slow': 'slow',
@@ -270,8 +276,15 @@
       'section.philosophy.sync.title': 'Синхронизм',
       'section.philosophy.sync.text': 'Способность живых систем действовать в такт с универсальными циклами реальности.',
 
-      'section.pillars.label': 'Локальные зодиаки',
-      'section.pillars.title': 'Почему традиционные системы ошибочны?',
+      'section.pillars.label': 'Тайминг',
+      'section.pillars.title': 'Астрология — это не про «кто вы», а про «когда происходит»',
+      'section.pillars.text1': 'Гороскоп ничего не знает о вашей национальности, внешности, прошлом или конкретных обстоятельствах вашей жизни.',
+      'section.pillars.text2': 'Он не описывает вашу личность напрямую.',
+      'section.pillars.text3': 'Он показывает тайминг.',
+      'section.pillars.text4': 'Планетарные циклы работают как система часов — отмечая, когда активируются процессы, нарастает напряжение и происходят события.',
+      'section.pillars.text5': 'MSA работает именно с этим уровнем реальности: не с описанием человека, а со структурой времени.',
+
+
       'section.pillars.tropical.title': 'Тропический зодиак:',
       'section.pillars.tropical.text': 'Привязан к сезонам Земли. Он перестает работать, как только вы покидаете орбиту планеты или рождаетесь в космосе.',
       'section.pillars.sidereal.title': 'Сидерический зодиак:',
