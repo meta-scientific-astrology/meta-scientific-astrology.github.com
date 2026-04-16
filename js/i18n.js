@@ -148,7 +148,7 @@
       'start.path.app.text': 'Launch ALFI - your personal MSA navigation instrument. Compute your Archetype, map a relationship, or check today\'s Radar window. Available on all platforms.',
       'start.path.app.btn': 'OPEN',
 
-      'label.test': 'test',
+      'label.test': 'TestFlight',
       'label.slow': 'slow',
       'label.demo': 'demo',
 
@@ -397,7 +397,7 @@
       'start.path.app.text': 'ALFI - это ваш персональный инструмент навигации. Рассчитайте свой архетип, проанализируйте отношения или проверьте окно Радара на сегодня. Доступно на всех платформах.',
       'start.path.app.btn': 'ПЕРЕЙТИ В ПРИЛОЖЕНИЕ ALFI',
 
-      'label.test': 'тест',
+      'label.test': 'TestFlight',
       'label.slow': 'slow',
       'label.demo': 'демо',
 
