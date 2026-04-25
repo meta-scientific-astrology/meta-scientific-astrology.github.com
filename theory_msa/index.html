@@ -17,6 +17,12 @@
             <div class="nav-links" id="navLinks">
                 <a href="../index.html" data-i18n="nav.pillars">Home</a>
                 <a href="../support.html" data-i18n="nav.support">Support</a>
+                <div class="nav-lang">
+                    <button class="lang-btn active"
+                        onclick="localStorage.setItem('alfi_lang', 'en'); location.reload()">EN</button>
+                    <button class="lang-btn"
+                        onclick="localStorage.setItem('alfi_lang', 'ru'); location.href='ru/' + window.location.pathname.split('/').pop()">RU</button>
+                </div>
             </div>
             <div class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
                 <span></span><span></span><span></span>
@@ -44,12 +50,13 @@
         </aside>
 
         <section class="paper-content">
-            <article><h1 id="theory-top" data-i18n="theory.main.title">The Fundamental Theory of [MSA]</h1>
+            <article>
+                <h1 id="theory-top" data-i18n="theory.main.title">The Fundamental Theory of [MSA]</h1>
                 <p><em data-i18n="theory.author">By Ruslan Dzhansakov</em></p>
                 <hr>
 
 
-                </article>
+            </article>
         </section>
     </main>
 
@@ -62,7 +69,8 @@
                 <a href="../refund.html" data-i18n="footer.links.refund">Refund Policy</a>
                 <a href="../support.html" data-i18n="footer.links.support">Support</a>
                 <a href="../deletion.html" data-i18n="footer.links.deletion">Delete Account</a>
-                <a href="index.html" class="active" class="active" data-i18n="footer.links.theory">Theory (White Paper)</a>
+                <a href="index.html" class="active" class="active" data-i18n="footer.links.theory">Theory (White
+                    Paper)</a>
             </div>
             <div class="footer-social">
                 <a href="https://www.reddit.com/r/MSA_Astrology" title="Reddit"><i class="fab fa-reddit"></i></a>

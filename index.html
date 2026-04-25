@@ -280,22 +280,6 @@
             }
         }
 
-        @media (max-width: 600px) {
-            .pillar-number {
-                font-size: 3.5rem;
-            }
-
-            .hero-actions-row {
-                flex-direction: column;
-            }
-
-            .hero-actions-row .btn-primary,
-            .hero-actions-row .btn-outline {
-                width: 100%;
-                max-width: 320px;
-                justify-content: center;
-            }
-        }
     </style>
 </head>
 
@@ -309,8 +293,12 @@
                 <a href="#philosophy" data-i18n="nav.philosophy">Philosophy</a>
                 <a href="#pillars" data-i18n="nav.pillars">Framework</a>
                 <a href="index_app.html" data-i18n="nav.app">ALFI App</a>
-                <a href="theory_msa/chapter_1.html" data-i18n="nav.theory">White Paper</a>
+                <a href="theory_msa/chapter_1.html" data-i18n="nav.theory" data-i18n-href="path.theory">White Paper</a>
                 <a href="support.html" data-i18n="nav.support">Support</a>
+            </div>
+            <div class="nav-lang">
+                <button class="lang-btn" onclick="localStorage.setItem('alfi_lang', 'en'); location.reload();">EN</button>
+                <button class="lang-btn" onclick="localStorage.setItem('alfi_lang', 'ru'); location.reload();">RU</button>
             </div>
             <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
                 <span></span>
@@ -498,7 +486,7 @@
                         philosophical and technical foundation of MSA. Proto-Reality,
                         Resonance, Galactic Zodiac, Synastry, and more.
                     </p>
-                    <a href="theory_msa/chapter_1.html" class="btn-cta">
+                    <a href="theory_msa/chapter_1.html" class="btn-cta" data-i18n-href="path.theory">
                         <span data-i18n="start.path.theory.btn">READ WHITE PAPER</span> <i
                             class="fas fa-arrow-right"></i>
                     </a>
@@ -526,7 +514,7 @@
         <div class="footer-inner">
             <div class="footer-logo">ALFI</div>
             <div class="footer-links">
-                <a href="theory_msa/chapter_1.html" data-i18n="footer.links.theory">Theory (White Paper)</a>
+                <a href="theory_msa/chapter_1.html" data-i18n="footer.links.theory" data-i18n-href="path.theory">Theory (White Paper)</a>
                 <a href="terms.html" data-i18n="footer.links.terms">Terms of Service</a>
                 <a href="privacy.html" data-i18n="footer.links.privacy">Privacy Policy</a>
                 <a href="refund.html" data-i18n="footer.links.refund">Refund Policy</a>

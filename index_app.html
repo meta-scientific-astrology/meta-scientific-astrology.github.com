@@ -29,6 +29,10 @@
                 <a href="#pricing" data-i18n="app.nav.pricing">Pricing</a>
                 <a href="support.html" data-i18n="nav.support">Support</a>
             </div>
+            <div class="nav-lang">
+                <button class="lang-btn" onclick="localStorage.setItem('alfi_lang', 'en'); location.reload();">EN</button>
+                <button class="lang-btn" onclick="localStorage.setItem('alfi_lang', 'ru'); location.reload();">RU</button>
+            </div>
             <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
                 <span></span>
                 <span></span>
@@ -373,7 +377,7 @@
                 <a href="refund.html" data-i18n="footer.links.refund">Refund Policy</a>
                 <a href="support.html" data-i18n="footer.links.support">Support</a>
                 <a href="deletion.html" data-i18n="footer.links.deletion">Delete Account</a>
-                <a href="theory_msa/chapter_1.html" data-i18n="footer.links.theory">Theory (White Paper)</a>
+                <a href="theory_msa/chapter_1.html" data-i18n="footer.links.theory" data-i18n-href="path.theory">Theory (White Paper)</a>
             </div>
             <div class="footer-social">
                 <a href="https://www.reddit.com/r/MSA_Astrology" title="Reddit"><i class="fab fa-reddit"></i></a>

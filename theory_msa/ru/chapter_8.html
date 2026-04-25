@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теория MSA | White Paper | ALFI</title>
+    <link rel="stylesheet" href="../../style.css?v=20260316-1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="policy-page theory-page">
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="../../index.html" class="nav-logo">AL<span>FI</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../../index.html" data-i18n="nav.pillars">Главная</a>
+                <a href="../../support.html" data-i18n="nav.support">Поддержка</a>
+                <div class="nav-lang">
+                    <button class="lang-btn" onclick="localStorage.setItem('alfi_lang', 'en'); location.href='../' + window.location.pathname.split('/').pop()">EN</button>
+                    <button class="lang-btn active" onclick="localStorage.setItem('alfi_lang', 'ru'); location.reload()">RU</button>
+                </div>
+            </div>
+            <div class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="paper-layout">
+        <aside class="chapter-nav" aria-label="Навигация по главам">
+            <div class="chapter-nav-inner">
+                <p class="chapter-nav-title" data-i18n="theory.nav.title">Быстрая навигация</p>
+                <a href="../../index.html">Обложка</a>
+                <a href="chapter_1.html">Глава 1</a>
+                <a href="chapter_2.html">Глава 2</a>
+                <a href="chapter_3.html">Глава 3</a>
+                <a href="chapter_4.html">Глава 4</a>
+                <a href="chapter_5.html">Глава 5</a>
+                <a href="chapter_6.html">Глава 6</a>
+                <a href="chapter_7.html">Глава 7</a>
+                <a href="chapter_8.html" class="active">Глава 8</a>
+                <a href="chapter_9.html">Глава 9</a>
+                <a href="appendix_1.html">Приложение 1 (FAQ)</a>
+                <a href="appendix_2.html">Приложение 2 (Глоссарий)</a>
+            </div>
+        </aside>
+
+        <section class="paper-content">
+            <article>
+                <h1 id="chapter-8-transits">Глава 8. Прогностика и Анализ Транзитов в [МНА]</h1>
+
+                <h2 id="table-of-contents-">Содержание:</h2>
+                <p>8.1 Транзиты Как Синастрия с [Полем]<br>
+                    8.2 Двухэтапная Модель Анализа Транзитов<br>
+                    8.3 Этап 1: Поиск Транзитного Резонанса<br>
+                    8.4 Этап 2: Анализ Каналов Синхронизации<br>
+                    8.5 Два Слоя Транзитной Карты: Геоцентрика и Гелиоцентрика<br>
+                    8.6 Практический Алгоритм Прогностического Анализа<br>
+                    8.7 Особые Случаи: Ретроградность и Множественные Проходы<br>
+                    8.8 Временные Масштабы: Быстрые и Медленные Транзиты<br>
+                    8.9 Сознательная Навигация: От Предсказания к Со-творчеству</p>
+                
+                <img src="../../assets/images_theory/8_forecast.jpg" alt="chapter_8 cover"
+                    style="max-width: 100%; border-radius: 8px; margin-bottom: 20px;">
+
+                <h3 id="introduction-from-statics-to-dynamics">Введение: От Статики к Динамике</h3>
+                <p>Прогноз на определенное время — это <strong>анализ совместимости</strong> между вашей натальной картой и текущим состоянием [Поля] ("Картой Поля"). Транзиты — это процесс синхронизации через резонанс между вашим неизменным фильтром и живым, меняющимся состоянием объективных ритмов.</p>
+
+                <h2 id="8-1-transits-as-synastry">8.1 Транзиты Как Синастрия с [Полем]</h2>
+                <p>В транзитах взаимодействие асимметрично: ваша карта — константа, Карта Поля — переменная. Вы не можете изменить состояние Поля, но можете сознательно выбирать, как откликаться на его сигналы.</p>
+
+                <h2 id="8-2-analysis-model">8.2 Двухэтапная Модель Анализа</h2>
+                <ol>
+                    <li><strong>Этап 1: Поиск Резонанса.</strong> Определение подобия между структурами Карты Поля и натальной карты.</li>
+                    <li><strong>Этап 2: Анализ Синхронизации.</strong> Изучение темпоральных кардинальных аспектов.</li>
+                </ol>
+                <p>Мы используем <strong>Рабочий орбис (±7°)</strong> для определения периода влияния и <strong>Точный орбис (±1°)</strong> для выявления пика событийности.</p>
+
+                <h2 id="8-4-synchronization-channels">8.4 Анализ Каналов Синхронизации</h2>
+                <p>Только кардинальные аспекты (0°, 90°, 180°, 270°) создают событийную синхронизацию. Иерархия значимости:</p>
+                <ul>
+                    <li><strong>Уровень 1 (Максимум):</strong> Аспекты к Светилам (Солнце, Луна), возвраты планет к своим положениям и активация ключевых модуляторов (Уровень 1).</li>
+                    <li><strong>Уровень 2 (Высокая):</strong> Активация натальных аспектов (Уровень 2) и транзиты по Углам карты.</li>
+                </ul>
+
+                <h2 id="8-5-two-layers">8.5 Два Слоя Транзитной Карты</h2>
+                <ul>
+                    <li><strong>Геоцентрика:</strong> Субъективный опыт. Как вы будете переживать период (Сфера + Стиль).</li>
+                    <li><strong>Гелиоцентрика:</strong> Объективные потенциалы. Зачем это происходит, какова задача Поля (Сущность).</li>
+                </ul>
+                <p>Максимально судьбоносные периоды возникают при активации одной темы в обоих слоях одновременно.</p>
+
+                <h2 id="8-8-time-scales">8.8 Временные Масштабы: Фон и Триггер</h2>
+                <p>Медленные планеты (Сатурн-Плутон) создают <strong>фон</strong> — долгосрочные трансформационные процессы. Быстрые планеты (Луна-Марс) выступают <strong>триггерами</strong>, проявляя потенциал фона в конкретные события.</p>
+
+                <h2 id="8-9-conscious-navigation">8.9 Сознательная Навигация</h2>
+                <p>Транзиты не предопределяют — они <strong>предлагают</strong>. Один и тот же транзит может быть прожит на трех уровнях:</p>
+                <ol>
+                    <li><strong>Реактивность:</strong> Транзит "случается с вами", вы жертва обстоятельств.</li>
+                    <li><strong>Осознанность:</strong> Вы понимаете тему и сознательно работаете с вызовом.</li>
+                    <li><strong>Со-творчество:</strong> Вы используете транзит как инструмент и попутный ветер для своих целей.</li>
+                </ol>
+
+                <hr>
+                <h2 id="-end-of-chapter-8-"><strong>Конец Главы 8</strong></h2>
+                <p><em>MSA больше не является набором гипотез. Теперь это работающая технология — полноценная система для навигации в потоках реальности.</em></p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-logo">ALFI</div>
+            <div class="footer-links">
+                <a href="../../terms.html" data-i18n="footer.links.terms">Условия использования</a>
+                <a href="../../privacy.html" data-i18n="footer.links.privacy">Конфиденциальность</a>
+                <a href="../../refund.html" data-i18n="footer.links.refund">Возврат средств</a>
+                <a href="../../support.html" data-i18n="footer.links.support">Поддержка</a>
+                <a href="../../deletion.html" data-i18n="footer.links.deletion">Удалить аккаунт</a>
+                <a href="chapter_1.html" class="active" data-i18n="footer.links.theory">Теория MSA</a>
+            </div>
+            <p class="footer-copy" data-i18n="footer.copy">&copy; 2024 Руслан Джансаков. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="../../js/i18n.js"></script>
+</body>
+
+</html>
